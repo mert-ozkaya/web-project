@@ -1,0 +1,572 @@
+$blue : #1b3957;
+$olive : #bfbfa2;
+$orange : #f5865e;
+$sky : #89d3d9;
+$green : #68a694;
+
+html,body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h3{
+  text-align: center;
+}
+
+a{
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+
+  &:hover{
+    color: rgba(0,0,0,1);
+  }
+
+}
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap{
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+  background: $sky;
+}
+
+#building{
+  width: 215px;
+  margin: 0 auto;
+  -webkit-transition: .22s width linear;
+  -o-transition: .22s width linear;
+  transition: .22s width linear;
+}
+
+.roof{
+
+  span{
+    background: #bfbfa2;
+    border: 5px solid #1b3957;
+    margin: 0 auto;
+  }
+  .triangle {
+  width: 100%;
+  border-left:358px solid transparent;
+  border-right: 358px solid transparent;
+
+  border-bottom: 100px solid $blue;
+}
+
+  .layer-1,.layer-2{
+    width: 100%;
+    height: 17px;
+    position: relative;
+    margin: 0 auto;
+
+    &::before{
+      content: '';
+      width: 52%;
+      height: 10px;
+      border: 7px solid #1b3957;
+      border-right: none;
+      position: absolute;
+      top: 0;
+      left: 2px;
+      -webkit-transform: skew(10deg);
+          -ms-transform: skew(10deg);
+              transform: skew(10deg);
+      -webkit-box-shadow: -1px 0px 0 1px rgba(0,0,0,.15);
+              box-shadow: -1px 0px 0 1px rgba(0,0,0,.15);
+      background:$olive;
+    }
+
+    &::after{
+      content: '';
+      width: 52%;
+      height: 10px;
+      border: 7px solid #1b3957;
+      border-left: none;
+      position: absolute;
+      top: 0;
+      right: 2px;
+      -webkit-transform: skew(-10deg);
+          -ms-transform: skew(-10deg);
+              transform: skew(-10deg);
+      background: #bfbfa2;
+      -webkit-box-shadow: 3px 0px 0 1px rgba(0,0,0,.15);
+              box-shadow: 3px 0px 0 1px rgba(0,0,0,.15);
+    }
+
+  }
+  .layer-2{
+    width: 90%;
+    height: 17.5px;
+  }
+
+}
+
+@media screen and (min-width : 750px){
+  #building{
+    width: 715px;
+  }
+  .wall{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: 'row';
+            flex-direction: 'row';
+
+    & > div{
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+    }
+  }
+
+}
+
+.wall{
+  background: $orange;
+  width: 87%;
+  border: 5px solid #1b3957;
+  margin: 0 auto;
+
+
+
+  .floors{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+
+    .window{
+      width: calc(33.333333% - 10px);
+      height: 100px;
+      border: 4px solid #1b3957;
+      border-bottom: 12px solid #1b3957;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-shadow: 0 5px 0 1px rgba(0,0,0,.15);
+              box-shadow: 0 5px 0 1px rgba(0,0,0,.15);
+      background: #fff;
+
+      & > div{
+        height: 50%;
+        width: 100%;
+        position: relative;
+
+        &:first-child{
+          border-bottom: 4px solid #1b3957;
+          -webkit-box-shadow: 0 3px 0 1px rgba(0,0,0,.15);
+                  box-shadow: 0 3px 0 1px rgba(0,0,0,.15);
+        }
+
+        &.pane{
+          background: #bfbfa2;
+
+          &::before{
+            content : '';
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 2px;
+            height: 30px;
+            background: #1b3957;
+          }
+
+          &::after{
+            content : '';
+            position: absolute;
+            top: calc(100% + 30px);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 5px;
+            height: 8px;
+            background: $blue;
+          }
+
+        }
+
+        .pot{
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          bottom: 0;
+
+          &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 6px;
+            height: 10px;
+            left: 3px;
+            -webkit-transform: skew(10deg);
+                -ms-transform: skew(10deg);
+                    transform: skew(10deg);
+            border: 2px solid $blue;
+            border-right: none;
+            background: $orange;
+          }
+
+          &::after{
+            content: '';
+            position: absolute;
+            right: 3px;
+            bottom: 0;
+            width: 6px;
+            height: 10px;
+            -webkit-transform: skew(-10deg);
+                -ms-transform: skew(-10deg);
+                    transform: skew(-10deg);
+            border: 2px solid $blue;
+            border-left: none;
+            background: $orange;
+          }
+
+          .leaves{
+
+            &::before{
+              content: '';
+              position: absolute;
+              border-radius: 50px;
+              -webkit-transform: rotate(45deg);
+                  -ms-transform: rotate(45deg);
+                      transform: rotate(45deg);
+              width: 12px;
+              height: 2.5px;
+              left: -0px;
+              top: 0;
+              background: $green;
+            }
+
+            &::after{
+              content: '';
+              position: absolute;
+              border-radius: 50px;
+              -webkit-transform: rotate(-45deg);
+                  -ms-transform: rotate(-45deg);
+                      transform: rotate(-45deg);
+              width: 12px;
+              height: 2.5px;
+              right: -0px;
+              top: 0;
+              background: $green;
+            }
+
+          }
+
+        }
+
+        &{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+
+          .glare{
+            width: 30px;
+            height: 2.1px;
+            display: block;
+            background: #89d3d9;
+            border-radius: 10px;
+            -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            position: relative;
+
+            &::before{
+              content: '';
+              position: absolute;
+              width: 8px;
+              height: 1.5px;
+              top: 6px;
+              border-radius: 10px;
+              left: -3px;
+              background: #89d3d9;
+            }
+
+            &::after{
+              content: '';
+              position: absolute;
+              width: 15px;
+              height: 1.5px;
+              top: 6px;
+              right: 5px;
+              border-radius: 10px;
+              background: #89d3d9;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.basement{
+  padding: 20px 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#door{
+  width: 37%;
+  background: #fff;
+  border: 4px solid $blue;
+  margin-bottom: -3px;
+
+  .ventilation{
+    padding: 4px 5px;
+    background: $olive;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 4px solid $blue;
+    -webkit-box-shadow: 0 8px 0 1px rgba(0,0,0,.15);
+            box-shadow: 0 8px 0 1px rgba(0,0,0,.15);
+
+    .glass{
+      width: 100%;
+      height: 13px;
+      background: #fff;
+      border: 2px solid $blue;
+      border-radius: 10px 10px 0 0;
+    }
+
+  }
+
+  .main{
+    padding: 8px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+
+    .glass{
+      width: calc(50% - 8px);
+      height: 50px;
+      background: #89d3d9;
+      border: 2px solid $blue;
+      border-top: 3px solid $blue;
+      border-bottom: 3px solid $blue;
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 1.5px;
+        top: 40%;
+        border-radius: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: #fff;
+        -webkit-transform: rotate(-50deg);
+            -ms-transform: rotate(-50deg);
+                transform: rotate(-50deg);
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 1.5px;
+        top: calc(40% + 10px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: #fff;
+        -webkit-transform: rotate(-50deg);
+            -ms-transform: rotate(-50deg);
+                transform: rotate(-50deg);
+      }
+
+        .knob{
+          width: 3px;
+          height: 3px;
+          background: $orange;
+          position: absolute;
+          bottom: 5px;
+          right: 2px;
+        }
+
+    }
+
+  }
+
+  .bar{
+    width: 70%;
+    height: 2px;
+    border-radius: 5px;
+    background: $blue;
+    margin: 5px auto;
+  }
+
+  .bottom{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 8px;
+
+    span{
+      width: calc(50% - 8px);
+      height: 17px;
+      border: 2px solid $blue;
+    }
+
+  }
+
+}
+
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#main-window{
+  width: 50%;
+  height: 85px;
+  border: 4px solid $blue;
+  background: #fff;
+  -webkit-box-shadow: 0 7px 0 1px rgba(0,0,0,.15);
+          box-shadow: 0 7px 0 1px rgba(0,0,0,.15);
+
+  .cloth{
+
+    ul{
+      background: $olive;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      border-bottom: 3px solid $blue;
+      -webkit-box-shadow: 0 7px 0 1px rgba(0,0,0,.15);
+              box-shadow: 0 7px 0 1px rgba(0,0,0,.15);
+
+      li{
+        width: 2px;
+        height: 22px;
+        background: #fff;
+        position: relative;
+
+        &::before{
+          content: '';
+          position: absolute;
+          -webkit-box-shadow: 0 2px 0 1px rgba(0,0,0,.15);
+                  box-shadow: 0 2px 0 1px rgba(0,0,0,.15);
+          border-radius: 100px;
+          width: 3px;
+          height: 3px;
+          background: $blue;
+          bottom: -5px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .window{
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 4px 0 4px;
+
+    .glass{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background: $sky;
+      border: 2px solid $blue;
+      border-top: none;
+    }
+
+  }
+
+}
+
+.evilhead{
+  width: 100%;
+  color: $blue;
+}

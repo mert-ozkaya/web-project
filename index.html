@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./assets/css/flex.css">
+
+  <script>
+
+  var isOpen = false;
+  function toggleMenu(){
+
+    var menu = document.getElementById("menu");
+
+    if(isOpen){
+      menu.style.visibility='hidden';
+      isOpen= false;
+    }
+    else {
+      menu.style.visibility = 'visible';
+      isOpen = true;
+    }
+
+  }
+  </script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+      <div id="navbar-left">
+          <div id="menu">
+            <div class="menu-item menu-home"> HOME </div>
+            <div class="menu-item"> BAND </div>
+            <div class="menu-item"> TOUR </div>
+            <div class="menu-item"> CONTACT </div>
+            <div class="menu-item box-dropdown"> MORE
+              <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+              </ul>
+
+            </div>
+          </div>
+      </div>
+      <div id="navbar-mid">
+      </div>
+
+      <div id="navbar-right">
+          <div onclick="toggleMenu()"> <span class="glyphicon-open" > <img src="images/glyphicons-114-justify.png"> </span> </div>
+      </div>
+    </div>
+
+
+    <div class="slider">
+            <img class="slider-image" src="images/ny.jpg" >
+     </div>
+
+
+<div class="mid-container">
+    <div class="box">
+      <div class="title-box ">THE BAND </div>
+      <div class="alt-title-box">We love music </div>
+      <div class="desc-box">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+        <div class="image-box">
+            <div class="item">Name  <img class="member" src="images/bandmember.jpg" > </div>
+            <div class="item item-mid">Name  <img class="member" src="images/bandmember.jpg" > </div>
+            <div class="item">Name <img class="member" src="images/bandmember.jpg" > </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="mid-container tour-container">
+    <div class="box">
+      <div class="title-box ">TOUR DATES </div>
+      <div class="alt-title-box">Remember to book your tickets!</div>
+      <div class="month-list">
+        <ul>
+            <li> September <button class="my-button"> Sold out </button> </li>
+            <li class="month-mid"> October <button class="my-button"> Sold out</button> </li>
+            <li> November <div class="miktar"> 3</div> </li>
+        </ul>
+       </div>
+        <div class="image-box tour-box">
+            <div class="item">
+              <img class="ticket-img" src="images/newyork.jpg">
+              <div class="ticket-text ticket-title" > New York </div>
+              <div class="ticket-text ticket-date" > Fri 27 Nov 2016 </div>
+              <div class="ticket-text"> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </div>
+              <div class="ticket-text"> <button class="my-button ticket-button"> Buy Ticket</button> </div>
+            </div>
+            <div class="item item-mid">
+              <img class="ticket-img" src="images/newyork.jpg">
+              <div class="ticket-text ticket-title" > New York </div>
+              <div class="ticket-text ticket-date" > Fri 27 Nov 2016 </div>
+              <div class="ticket-text"> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </div>
+              <div class="ticket-text"> <button class="my-button ticket-button"> Buy Ticket</button> </div>
+            </div>
+            <div class="item">
+              <img class="ticket-img" src="images/newyork.jpg">
+              <div class="ticket-text ticket-title" > New York </div>
+              <div class="ticket-text ticket-date" > Fri 27 Nov 2016 </div>
+              <div class="ticket-text"> Praesent tincidunt sed tellus ut rutrum sed vitae justo. </div>
+              <div class="ticket-text"> <button class="my-button ticket-button"> Buy Ticket</button> </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="mid-container">
+  <div class="box">
+    <div class="title-box "> CONTACT </div>
+    <div class="alt-title-box">Fan? Drop a note!</div>
+    <div class="contact-box">
+      <div class="left-box">
+        <p> <span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+        <p> <span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+        <p> <span class="glyphicon glyphicon-earphone"></span> Phone: +00 151515</p>
+      </div>
+      <div class="right-box">
+        <form>
+          <input type="text" placeholder="Name" class="name-input" />
+          <input type="text" placeholder="Email" class="email-input" />
+          <input type="text" placeholder="Message" class="message-input" />
+
+          <input type="submit" value="SEND" class="submit-input" >
+        </form>
+      </div>
+    </div>
+
+</div>
+</div>
+
+<div class="container">
+  <div class="footer-box">
+    Powered by Mert Özkaya :D
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>

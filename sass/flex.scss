@@ -1,0 +1,404 @@
+body{
+  margin:0;
+  padding: 0;
+}
+
+.container{
+ display: flex;
+ height:40px;
+}
+
+#navbar-left{
+  flex-grow: 2;
+  background-color:black;
+  color:white;
+}
+
+#navbar-mid{
+  flex-grow:1;
+  background-color: black;
+}
+
+#navbar-right{
+  width:50px;
+  background-color: black;
+}
+
+.glyphicon-open{
+    width: 24px;
+    height: 23px;
+    margin:7px 14px;
+    display: block;
+    visibility: hidden;
+    img{
+      background-color: white;
+    }
+}
+
+
+#menu{
+  display: flex;
+}
+
+.menu-item{
+    width:8%;
+    text-align:center;
+    padding:10px 5px;
+}
+
+.menu-item:hover{
+  background-color:#ddd;
+  color:white;
+}
+
+
+.navbar-item:hover {
+  background-color:#ccc;
+  color:black;
+}
+
+.box-dropdown {
+  ul{
+    display: none;
+    position: absolute;
+    margin-left:-5px;
+    margin-top: 10px;
+    width:9.3333%;
+    list-style: none;
+    text-align: left;
+
+    li{
+      height:30px;
+      padding-top:10px;
+      padding-left:10px;
+    }
+    li:hover{
+      background-color:red;
+
+    }
+  }
+}
+
+.box-dropdown:hover{
+  ul{
+    padding-left:0;
+    display: block;
+    background-color:black;
+    color:white;
+
+  }
+}
+
+.slider {
+  width: 100%;
+  height:90%;
+  position: static;
+
+  .slider-image{
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+
+}
+
+.mid-container{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.box{
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom:50px;
+  height: auto;
+  text-align: center;
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
+
+.title-box{
+  font-size:25pt;
+  font-weight:400;
+  letter-spacing: 4px;
+}
+
+.alt-title-box{
+  padding-top:15px;
+  font-size:14pt;
+  font-weight:400;
+  color:grey;
+  letter-spacing:0px;
+  font-style: italic;
+}
+
+.desc-box{
+  padding-top:15px;
+  font-size:12pt;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight:500;
+  text-align: justify;
+}
+
+
+.image-box{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 50px auto;
+  height:auto;
+
+  .item{
+      width: 25%;
+  }
+
+  .item-mid{
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+.member{
+  width:100%;
+  margin-top:10px;
+}
+
+
+.tour-container{
+  background-color: black;
+  color:white;
+}
+
+.month-list{
+  width: 100%;
+  margin-top:50px;
+  background-color: red;
+
+  ul{
+      list-style-type: none;
+
+    li{
+      color:grey;
+      background-color: white;
+      line-height: 50px;
+      text-align: left;
+      padding-left:10px;
+      margin-left: -40px;
+    }
+
+  }
+}
+
+.month-mid{
+  border-bottom:1px #ccc solid;
+  border-top:1px #ccc solid;
+}
+
+   .my-button{
+    padding:3px 10px;
+    margin-left: 20px;
+    background-color: #f44336;
+    color:white;
+    font-weight: 400;
+}
+
+ul li .miktar {
+  float: right;
+  width: 35px;
+  height: 25px;
+  line-height:12px;
+  text-align: center;
+  padding-top:9px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  margin-top:10px;
+  margin-right: 15px;
+}
+
+
+.tour-box{
+  width:100%;
+  height: auto;
+
+  .item{
+    width:32%;
+    background-color: black;
+
+  }
+  .item-mid{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+
+.ticket-img{
+  width:100%;
+  height: 200px;
+  padding-top:0px;
+
+}
+.ticket-img:hover{
+  opacity: 0.5;
+}
+
+
+.ticket-text{
+  background-color: white;
+  color:black;
+  padding:15px 20px 0 20px;
+  text-align: left;
+}
+
+.ticket-title{
+  font-weight: 600;
+
+}
+
+.ticket-date{
+  color:grey;
+}
+
+.ticket-button{
+  background-color: black;
+  color:white;
+  margin-left:0px;
+  margin-bottom: 20px;
+  padding:10px;
+}
+
+.contact-box{
+  display: flex;
+  flex-flow: wrap;
+  justify-content:flex-start;
+  width: 100%;
+  margin: 50px auto;
+  height:auto;
+
+  .left-box{
+    width: 50%;
+    text-align: left;
+    font-size:13pt;
+    color:black;
+  }
+
+  .right-box{
+     width: 50%;
+     padding-top:20px;
+     text-align: right;
+    .name-input{
+      width: 49%;
+      height:30px;
+      margin-right: 3px;
+    }
+    .email-input{
+      width: 49%;
+      height:30px;
+    }
+    .message-input{
+      width: 100%;
+      margin-top:10px;
+      height:30px;
+
+    }
+    .submit-input{
+      margin-top:15px;
+      width: auto;
+      padding:10px 20px;
+      background-color: black;
+      color:white;
+      margin-bottom:50px;
+      margin-right:5px;
+    }
+  }
+}
+
+
+.left-box span{
+  margin-right: 5px;
+}
+
+.footer-box{
+  width: 100%;
+  background-color:#ccc;
+  text-align: center;
+  height: 30%;
+  margin-top: 5%;
+  padding:100px;
+  color: grey;
+}
+
+@media (max-width: 600px) {
+
+.glyphicon-open{
+  visibility: visible;
+}
+
+#menu{
+  position: absolute;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  background-color: black;
+  color:white;
+  visibility: hidden;
+}
+
+.menu-item:hover{
+
+  width:100%;
+  text-align: left;
+
+}
+
+
+  .box-dropdown{
+    ul{
+      margin-left: -10px;
+      width:100%;
+      li{
+        padding-left:30px;
+      }
+    }
+  }
+
+  .box-dropdown:hover{
+    ul{
+          display: block;
+    }
+  }
+
+  .mid-container .box{
+    width:90%;
+  }
+  .image-box .item{
+    width: 80%;
+  }
+  .image-box .item-mid{
+    margin:30px 0px 30px 0px;
+  }
+
+  .contact-box .left-box{
+      width: 100%;
+      text-align: center;
+  }
+  .contact-box .right-box{
+      width: 100%;
+      text-align: center;
+
+      .name-input{
+        width: 49%;
+        height:30px;
+        margin-right: 0px;
+      }
+      .email-input{
+        width: 49%;
+        height:30px;
+      }
+
+  }
+}

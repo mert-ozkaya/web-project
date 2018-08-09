@@ -1,0 +1,256 @@
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.box-container > .my-navbar {
+  justify-content: flex-start;
+  background-color: black;
+  width: 100%;
+  height: 50px; }
+  .box-container > .my-navbar > .navbar-item {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 12pt;
+    width: auto;
+    height: 50px;
+    float: left; }
+  .box-container > .my-navbar .navbar-item:hover {
+    background-color: red; }
+    .box-container > .my-navbar .navbar-item:hover .more {
+      display: block; }
+
+.navbar-item > .more {
+  display: none;
+  position: absolute;
+  width: 150px;
+  height: 25px;
+  margin-top: 12.5px;
+  margin-left: -17px;
+  text-align: center; }
+
+.more > .item {
+  background-color: black;
+  padding: 10px; }
+
+.item:hover {
+  background-color: red; }
+
+.slider {
+  position: static;
+  background-color: pink;
+  width: 100%;
+  height: 90%;
+  margin-bottom: 5%; }
+  .slider img {
+    width: 100%;
+    height: 100%; }
+  .slider .slider-title {
+    position: absolute;
+    color: white;
+    left: 2%;
+    bottom: 10%;
+    font-size: 15pt; }
+  .slider .slider-description {
+    position: absolute;
+    color: white;
+    left: 2%;
+    bottom: 5%; }
+
+.box-container > div {
+  width: 700px;
+  text-align: center; }
+  .box-container > div > .desc-title {
+    font-size: 24pt;
+    color: black; }
+  .box-container > div > .desc-bottom-title {
+    font-size: 14pt;
+    color: grey;
+    padding-top: 2%; }
+  .box-container > div > .description {
+    font-size: 12pt;
+    text-align: justify;
+    padding-top: 2%; }
+
+.box-container > .photos {
+  width: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  text-align: center; }
+  .box-container > .photos > .photo-name {
+    margin-top: 5%;
+    text-align: center; }
+  .box-container > .photos > img {
+    margin-top: 5%;
+    width: 95%;
+    margin-bottom: 10%; }
+
+.box-container > .tour-box {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: black; }
+  .box-container > .tour-box > .tour-title {
+    margin-top: 5%;
+    font-size: 24pt;
+    color: white; }
+  .box-container > .tour-box > .tour-bottom-title {
+    font-size: 14pt;
+    color: grey;
+    padding-top: 2%; }
+  .box-container > .tour-box > .month-list {
+    margin: 2% auto;
+    width: 50%;
+    list-style-type: none; }
+    .box-container > .tour-box > .month-list ul li {
+      color: grey;
+      background-color: white;
+      line-height: 50px;
+      border-bottom: 1px solid grey;
+      text-align: left;
+      padding-left: 2%; }
+      .box-container > .tour-box > .month-list ul li span {
+        width: 100px;
+        padding: 1%;
+        margin-left: 2%;
+        background-color: #f44336;
+        color: white;
+        height: 50px; }
+      .box-container > .tour-box > .month-list ul li .miktar {
+        float: right;
+        width: 27px;
+        height: 27px;
+        line-height: 12px;
+        text-align: center;
+        border-radius: 30px;
+        background-color: black;
+        color: white; }
+  .box-container > .tour-box > .ticket-block {
+    background-color: black;
+    color: black;
+    height: auto;
+    width: 60%;
+    margin: 5% auto;
+    margin-bottom: 5%; }
+    .box-container > .tour-box > .ticket-block > .left-box, .box-container > .tour-box > .ticket-block .mid-box, .box-container > .tour-box > .ticket-block .right-box {
+      width: 32%;
+      float: left; }
+      .box-container > .tour-box > .ticket-block > .left-box img, .box-container > .tour-box > .ticket-block .mid-box img, .box-container > .tour-box > .ticket-block .right-box img {
+        height: 20%;
+        width: 100%; }
+        .box-container > .tour-box > .ticket-block > .left-box img:hover, .box-container > .tour-box > .ticket-block .mid-box img:hover, .box-container > .tour-box > .ticket-block .right-box img:hover {
+          opacity: 0.5; }
+      .box-container > .tour-box > .ticket-block > .left-box > .ticket-desc, .box-container > .tour-box > .ticket-block .mid-box > .ticket-desc, .box-container > .tour-box > .ticket-block .right-box > .ticket-desc {
+        background-color: white;
+        height: auto;
+        padding: 5%;
+        text-align: left;
+        font-size: 13pt;
+        font-weight: 200; }
+        .box-container > .tour-box > .ticket-block > .left-box > .ticket-desc .ticket-date, .box-container > .tour-box > .ticket-block .mid-box > .ticket-desc .ticket-date, .box-container > .tour-box > .ticket-block .right-box > .ticket-desc .ticket-date {
+          color: grey;
+          padding-top: 5%;
+          padding-bottom: 7%;
+          font-size: 12pt; }
+        .box-container > .tour-box > .ticket-block > .left-box > .ticket-desc .ticket-text, .box-container > .tour-box > .ticket-block .mid-box > .ticket-desc .ticket-text, .box-container > .tour-box > .ticket-block .right-box > .ticket-desc .ticket-text {
+          font-size: 12pt;
+          font-weight: normal; }
+        .box-container > .tour-box > .ticket-block > .left-box > .ticket-desc button, .box-container > .tour-box > .ticket-block .mid-box > .ticket-desc button, .box-container > .tour-box > .ticket-block .right-box > .ticket-desc button {
+          margin-top: 8%;
+          margin-bottom: 5%;
+          background-color: black;
+          color: white;
+          width: auto;
+          height: 40px; }
+          .box-container > .tour-box > .ticket-block > .left-box > .ticket-desc button:hover, .box-container > .tour-box > .ticket-block .mid-box > .ticket-desc button:hover, .box-container > .tour-box > .ticket-block .right-box > .ticket-desc button:hover {
+            background-color: #ccc;
+            color: black; }
+    .box-container > .tour-box > .ticket-block .mid-box {
+      margin-left: 2%;
+      margin-right: 2%; }
+
+.box-container > .contact-block {
+  width: 100%;
+  height: auto;
+  background-color: white; }
+  .box-container > .contact-block > .contact {
+    width: 50%;
+    margin: 5% auto;
+    text-align: center; }
+    .box-container > .contact-block > .contact > .contact-title {
+      font-size: 20pt; }
+    .box-container > .contact-block > .contact > .contact-note {
+      margin-top: 2%;
+      font-size: 15pt;
+      color: #ccc;
+      font-style: italic; }
+    .box-container > .contact-block > .contact > .contact-info {
+      width: 50%;
+      margin-top: 2%;
+      font-size: 13pt;
+      font-weight: 100;
+      color: black;
+      float: left;
+      text-align: justify; }
+    .box-container > .contact-block > .contact > .contact-message {
+      width: 50%;
+      margin-top: 2%;
+      float: right;
+      text-align: justify; }
+      .box-container > .contact-block > .contact > .contact-message .name-input {
+        width: 49%;
+        height: 10%; }
+      .box-container > .contact-block > .contact > .contact-message .email-input {
+        width: 49%;
+        height: 10%; }
+      .box-container > .contact-block > .contact > .contact-message .message-input {
+        width: 100%;
+        margin-top: 2%;
+        height: 10%; }
+      .box-container > .contact-block > .contact > .contact-message .submit-input {
+        float: right;
+        margin-top: 4%;
+        width: auto;
+        padding: 2% 5%;
+        background-color: black;
+        color: white;
+        margin-bottom: 30%; }
+
+.box-container > .footer-block {
+  width: 100%;
+  background-color: #ccc;
+  text-align: center;
+  height: 30%;
+  margin-top: 5%;
+  padding: 100px;
+  color: grey; }
+
+@media (max-width: 600px) {
+  .box-container > div > .description {
+    padding-left: 3%;
+    padding-right: 3%; }
+  .box-container > .tour-box {
+    height: 100%; }
+  .box-container > .tour-box > .month-list {
+    width: 90%; }
+  .box-container > .tour-box > .ticket-block {
+    width: 90%; }
+    .box-container > .tour-box > .ticket-block .left-box, .box-container > .tour-box > .ticket-block .mid-box, .box-container > .tour-box > .ticket-block .right-box {
+      width: 100%;
+      margin-top: 5%;
+      float: none; }
+    .box-container > .tour-box > .ticket-block .mid-box {
+      margin-left: 0;
+      margin-right: 0; }
+    .box-container > .tour-box > .ticket-block .right-box {
+      margin-bottom: 5%; }
+  .box-container > .contact-block {
+    width: 100%;
+    float: none; }
+  .box-container > .contact-block > .contact > .contact-info {
+    margin-top: 10%;
+    width: 100%;
+    float: none; }
+  .box-container > .contact-block > .contact > .contact-message {
+    width: 100%; } }
